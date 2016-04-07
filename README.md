@@ -319,5 +319,16 @@ Also see provided examples included in the example project. It contains clear ex
 
 [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/kairos-api/kairos-facial-recognition-api)
 
+---
+
+## Source Code
+
+Note: We have added the raw source code to the SDK so that you can make any changes / modifications as needed.  In the future we plan to add better documentation around the source code, build instructions, etc. but we wanted to get it out there as soon as possible as requested by a number of our customers. Feel free to use / modify / redistribute this as needed in your apps.
+
+If you see anything you'd like to change, fix, etc. please feel free to submit a pull request, that we will happily accept.
+
+
+---
+
 ##Support 
 Have an issue? Visit our [Support page](http://www.kairos.com/support) or [create an issue on GitHub](https://github.com/kairosinc/Kairos-SDK-Android)
