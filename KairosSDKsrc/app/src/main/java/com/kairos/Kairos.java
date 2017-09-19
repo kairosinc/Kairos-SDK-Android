@@ -60,9 +60,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -104,9 +107,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -151,9 +157,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -200,9 +209,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -258,9 +270,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -320,9 +335,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -390,9 +408,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -461,9 +482,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -535,9 +559,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override
@@ -607,9 +634,12 @@ public class Kairos {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
-                String responseString = new String(errorResponse);
-                callback.onFail(responseString);
-
+                if(errorResponse != null)
+                {
+                //Check null in case errorResponse is null
+                  String responseString = new String(errorResponse);
+                  callback.onFail(responseString);
+                }
             }
 
             @Override

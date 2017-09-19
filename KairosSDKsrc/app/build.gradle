@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+}
+
+dependencies {
+    compile files('libs/android-async-http-1.4.6.jar')
+}
+
+task createJar(dependsOn: build, type : Jar)  {
+
+    archiveName = 'KairosSDK.jar'
+
+    manifest {
+        attributes 'Manifest-Version': '1.0'
+    }
+
+    from zipTree('build/intermediates/bundles/release/classes.jar')
+    from zipTree('build/intermediates/bundles/release/libs/android-async-http-1.4.6.jar')
+/** this part doesn't work when we call build.finalizedby
+    //Adding all Libs
+    FileTree tree = fileTree(dir: "build/intermediates/bundles/release/libs", include: "*.jar");
+
+    for(File file : tree.collect()){
+        from zipTree(file)
+    }
+ **/
+}
+
+// This is the actual solution, as in https://stackoverflow.com/a/19037807/1002054
+task clearJar (type: Delete) {
+    delete '../libs/'
+}
+
+task makeJar (type: Copy){
+
+    from('build/libs/')
+    into('../libs/')
+ //   include('classes.jar','libs/android-async-http-1.4.6.jar')
+ //   rename ('classes.jar', 'kariosSDKAPI.jar')
+}
+
+makeJar.dependsOn(createJar)
+
+build.finalizedBy(createJar)
+assemble.finalizedBy(makeJar)
+clean.finalizedBy(clearJar)
